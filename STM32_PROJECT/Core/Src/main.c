@@ -111,9 +111,9 @@ int main(void)
   SCH_Init();
   SCH_Add_Task(ToggleLED1, 1000, 500);
   SCH_Add_Task(ToggleLED2, 1000, 1000);
-  SCH_Add_Task(ToggleLED3, 1000, 1500);
+  SCH_Add_Task(ToggleLED3, 1000, 0);
   SCH_Add_Task(ToggleLED4, 1000, 2000);
-  SCH_Add_Task(ToggleLED5, 1000, 0);
+  SCH_Add_Task(ToggleLED5, 1000, 3000);
   while (1)
   {
 	  SCH_Dispatch_Tasks();
